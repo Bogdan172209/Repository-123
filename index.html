@@ -1,63 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">ElectroStore</h1>
+    <nav class="nav">
+      <a href="#">Головна</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#">Про нас</a>
+      <a href="#">Контакти</a>
+      <a href="#" id="cart-btn">🛒 Кошик (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
 
-<section id="catalog" class="catalog">
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Ноутбук">
-    <h3>Ноутбук Pro X</h3>
-    <p class="price">$1200</p>
-    <button class="btn buy-btn" data-name="Ноутбук Pro X" data-price="1200">Купити</button>
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Топ-техніка для тебе</h2>
+    <p>Сучасна електроніка за найкращими цінами</p>
+    <a href="#catalog" class="btn">Переглянути каталог</a>
+  </section>
+
+  <!-- Catalog -->
+  <section id="catalog" class="catalog">
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Ноутбук"><h3>Ноутбук Pro X</h3><p class="price">$1200</p><button class="btn buy-btn" data-name="Ноутбук Pro X" data-price="1200">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смартфон"><h3>Смартфон Ultra</h3><p class="price">$800</p><button class="btn buy-btn" data-name="Смартфон Ultra" data-price="800">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Навушники"><h3>Навушники MaxSound</h3><p class="price">$150</p><button class="btn buy-btn" data-name="Навушники MaxSound" data-price="150">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Планшет"><h3>Планшет TabMaster</h3><p class="price">$500</p><button class="btn buy-btn" data-name="Планшет TabMaster" data-price="500">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-годинник"><h3>Смарт-годинник WatchX</h3><p class="price">$250</p><button class="btn buy-btn" data-name="Смарт-годинник WatchX" data-price="250">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Камера"><h3>Камера PhotoPro</h3><p class="price">$900</p><button class="btn buy-btn" data-name="Камера PhotoPro" data-price="900">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Ігрова консоль"><h3>Ігрова консоль GameBox</h3><p class="price">$400</p><button class="btn buy-btn" data-name="Ігрова консоль GameBox" data-price="400">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Колонка"><h3>Bluetooth-колонка SoundMax</h3><p class="price">$120</p><button class="btn buy-btn" data-name="Bluetooth-колонка SoundMax" data-price="120">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Монітор"><h3>Монітор UltraView</h3><p class="price">$300</p><button class="btn buy-btn" data-name="Монітор UltraView" data-price="300">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Клавіатура"><h3>Механічна клавіатура KeyMaster</h3><p class="price">$90</p><button class="btn buy-btn" data-name="Механічна клавіатура KeyMaster" data-price="90">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Миша"><h3>Геймерська миша ClickX</h3><p class="price">$60</p><button class="btn buy-btn" data-name="Геймерська миша ClickX" data-price="60">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Роутер"><h3>Wi-Fi Роутер NetPro</h3><p class="price">$110</p><button class="btn buy-btn" data-name="Wi-Fi Роутер NetPro" data-price="110">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Вебкамера"><h3>Вебкамера ClearView</h3><p class="price">$80</p><button class="btn buy-btn" data-name="Вебкамера ClearView" data-price="80">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Зовнішній HDD"><h3>Зовнішній HDD 1TB</h3><p class="price">$70</p><button class="btn buy-btn" data-name="Зовнішній HDD 1TB" data-price="70">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="SSD"><h3>SSD 500GB Fast</h3><p class="price">$120</p><button class="btn buy-btn" data-name="SSD 500GB Fast" data-price="120">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Гарнітура"><h3>Гарнітура GamerPro</h3><p class="price">$95</p><button class="btn buy-btn" data-name="Гарнітура GamerPro" data-price="95">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Проектор"><h3>Проектор MovieMax</h3><p class="price">$450</p><button class="btn buy-btn" data-name="Проектор MovieMax" data-price="450">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-телевізор"><h3>Смарт-телевізор SmartTV</h3><p class="price">$900</p><button class="btn buy-btn" data-name="Смарт-телевізор SmartTV" data-price="900">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Навушники бездротові"><h3>Бездротові навушники FreeSound</h3><p class="price">$180</p><button class="btn buy-btn" data-name="Бездротові навушники FreeSound" data-price="180">Купити</button></div>
+    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-колонка"><h3>Смарт-колонка VoiceX</h3><p class="price">$130</p><button class="btn buy-btn" data-name="Смарт-колонка VoiceX" data-price="130">Купити</button></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 ElectroStore. Усі права захищені.</p>
+  </footer>
+
+  <!-- Кошик -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Ваш кошик</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Разом: $0</p>
+      <button id="close-cart" class="btn">Закрити</button>
+    </div>
   </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Смартфон">
-    <h3>Смартфон Ultra</h3>
-    <p class="price">$800</p>
-    <button class="btn buy-btn" data-name="Смартфон Ultra" data-price="800">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Навушники">
-    <h3>Навушники MaxSound</h3>
-    <p class="price">$150</p>
-    <button class="btn buy-btn" data-name="Навушники MaxSound" data-price="150">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Планшет">
-    <h3>Планшет TabMaster</h3>
-    <p class="price">$500</p>
-    <button class="btn buy-btn" data-name="Планшет TabMaster" data-price="500">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Смарт-годинник">
-    <h3>Смарт-годинник WatchX</h3>
-    <p class="price">$250</p>
-    <button class="btn buy-btn" data-name="Смарт-годинник WatchX" data-price="250">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Камера">
-    <h3>Камера PhotoPro</h3>
-    <p class="price">$900</p>
-    <button class="btn buy-btn" data-name="Камера PhotoPro" data-price="900">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Ігрова консоль">
-    <h3>Ігрова консоль GameBox</h3>
-    <p class="price">$400</p>
-    <button class="btn buy-btn" data-name="Ігрова консоль GameBox" data-price="400">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Колонка">
-    <h3>Bluetooth-колонка SoundMax</h3>
-    <p class="price">$120</p>
-    <button class="btn buy-btn" data-name="Bluetooth-колонка SoundMax" data-price="120">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Монітор">
-    <h3>Монітор UltraView</h3>
-    <p class="price">$300</p>
-    <button class="btn buy-btn" data-name="Монітор UltraView" data-price="300">Купити</button>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/200x150" alt="Клавіатура">
-    <h3>Механічна клавіатура KeyMaster</h3>
-    <p class="price">$90</p>
-    <button class="btn buy-btn" data-name="Механічна клавіатура KeyMaster" data-price="90">Купити</button>
-  </div>
-</section>
+
+  <!-- JavaScript -->
+  <script>
+    const cart = [];
+    const cartBtn = document.getElementById('cart-btn');
+    const cartCount = document.getElementById('cart-count');
+    const cartModal = document.getElementById('cart-modal');
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const closeCart = document.getElementById('close-cart');
+
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseInt(button.getAttribute('data-price'));
+        cart.push({ name, price });
+        cartCount.textContent = cart.length;
+        updateCart();
+        alert(`${name} додано у кошик!`);
+      });
+    });
+
+    cartBtn.addEventListener('click', () => {
+      cartModal.style.display = 'flex';
+    });
+
+    closeCart.addEventListener('click', () => {
+      cartModal.style.display = 'none';
+    });
+
+    function updateCart() {
+      cartItems.innerHTML = '';
+      let total = 0;
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItems.append
