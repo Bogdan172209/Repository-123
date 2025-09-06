@@ -1,103 +1,549 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ElectroStore</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <h1 class="logo">ElectroStore</h1>
-    <nav class="nav">
-      <a href="#">Головна</a>
-      <a href="#catalog">Каталог</a>
-      <a href="#">Про нас</a>
-      <a href="#">Контакти</a>
-      <a href="#" id="cart-btn">🛒 Кошик (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>ElectroStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__row">
+        <h1 class="logo">ElectroStore</h1>
+        <nav class="nav">
+          <a href="#home">Головна</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#about">Про нас</a>
+          <a href="#delivery">Доставка та оплата</a>
+          <a href="#contacts">Контакти</a>
+          <button class="cart-btn" id="cart-btn">
+            🛒 Кошик (<span id="cart-count">0</span>)
+          </button>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <h2>Топ-техніка для тебе</h2>
-    <p>Сучасна електроніка за найкращими цінами</p>
-    <a href="#catalog" class="btn">Переглянути каталог</a>
-  </section>
+    <!-- Banner -->
+    <section id="home" class="banner">
+      <div class="container banner__inner">
+        <div class="banner__text">
+          <h2>Топ-техніка для тебе</h2>
+          <p>
+            Сучасна електроніка за найкращими цінами. Гарантія, сервіс
+            і швидка доставка по Україні.
+          </p>
+          <a href="#catalog" class="btn">Переглянути каталог</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Catalog -->
-  <section id="catalog" class="catalog">
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Ноутбук"><h3>Ноутбук Pro X</h3><p class="price">$1200</p><button class="btn buy-btn" data-name="Ноутбук Pro X" data-price="1200">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смартфон"><h3>Смартфон Ultra</h3><p class="price">$800</p><button class="btn buy-btn" data-name="Смартфон Ultra" data-price="800">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Навушники"><h3>Навушники MaxSound</h3><p class="price">$150</p><button class="btn buy-btn" data-name="Навушники MaxSound" data-price="150">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Планшет"><h3>Планшет TabMaster</h3><p class="price">$500</p><button class="btn buy-btn" data-name="Планшет TabMaster" data-price="500">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-годинник"><h3>Смарт-годинник WatchX</h3><p class="price">$250</p><button class="btn buy-btn" data-name="Смарт-годинник WatchX" data-price="250">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Камера"><h3>Камера PhotoPro</h3><p class="price">$900</p><button class="btn buy-btn" data-name="Камера PhotoPro" data-price="900">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Ігрова консоль"><h3>Ігрова консоль GameBox</h3><p class="price">$400</p><button class="btn buy-btn" data-name="Ігрова консоль GameBox" data-price="400">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Колонка"><h3>Bluetooth-колонка SoundMax</h3><p class="price">$120</p><button class="btn buy-btn" data-name="Bluetooth-колонка SoundMax" data-price="120">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Монітор"><h3>Монітор UltraView</h3><p class="price">$300</p><button class="btn buy-btn" data-name="Монітор UltraView" data-price="300">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Клавіатура"><h3>Механічна клавіатура KeyMaster</h3><p class="price">$90</p><button class="btn buy-btn" data-name="Механічна клавіатура KeyMaster" data-price="90">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Миша"><h3>Геймерська миша ClickX</h3><p class="price">$60</p><button class="btn buy-btn" data-name="Геймерська миша ClickX" data-price="60">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Роутер"><h3>Wi-Fi Роутер NetPro</h3><p class="price">$110</p><button class="btn buy-btn" data-name="Wi-Fi Роутер NetPro" data-price="110">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Вебкамера"><h3>Вебкамера ClearView</h3><p class="price">$80</p><button class="btn buy-btn" data-name="Вебкамера ClearView" data-price="80">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Зовнішній HDD"><h3>Зовнішній HDD 1TB</h3><p class="price">$70</p><button class="btn buy-btn" data-name="Зовнішній HDD 1TB" data-price="70">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="SSD"><h3>SSD 500GB Fast</h3><p class="price">$120</p><button class="btn buy-btn" data-name="SSD 500GB Fast" data-price="120">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Гарнітура"><h3>Гарнітура GamerPro</h3><p class="price">$95</p><button class="btn buy-btn" data-name="Гарнітура GamerPro" data-price="95">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Проектор"><h3>Проектор MovieMax</h3><p class="price">$450</p><button class="btn buy-btn" data-name="Проектор MovieMax" data-price="450">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-телевізор"><h3>Смарт-телевізор SmartTV</h3><p class="price">$900</p><button class="btn buy-btn" data-name="Смарт-телевізор SmartTV" data-price="900">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Навушники бездротові"><h3>Бездротові навушники FreeSound</h3><p class="price">$180</p><button class="btn buy-btn" data-name="Бездротові навушники FreeSound" data-price="180">Купити</button></div>
-    <div class="card"><img src="https://via.placeholder.com/200x150" alt="Смарт-колонка"><h3>Смарт-колонка VoiceX</h3><p class="price">$130</p><button class="btn buy-btn" data-name="Смарт-колонка VoiceX" data-price="130">Купити</button></div>
-  </section>
+    <!-- Tools: search & filters -->
+    <section class="tools">
+      <div class="container tools__row">
+        <input
+          id="search"
+          type="text"
+          placeholder="Пошук товарів..."
+        />
+        <div class="filters">
+          <button class="chip active" data-cat="all">Усе</button>
+          <button class="chip" data-cat="laptops">Ноутбуки</button>
+          <button class="chip" data-cat="phones">Смартфони</button>
+          <button class="chip" data-cat="audio">Аудіо</button>
+          <button class="chip" data-cat="peripherals">
+            Периферія
+          </button>
+          <button class="chip" data-cat="tv">ТВ та відео</button>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 ElectroStore. Усі права захищені.</p>
-  </footer>
+    <!-- Catalog -->
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <h3 class="section-title">Каталог</h3>
+        <div id="catalog-grid" class="grid"></div>
+      </div>
+    </section>
 
-  <!-- Кошик -->
-  <div id="cart-modal" class="cart-modal">
-    <div class="cart-content">
-      <h2>Ваш кошик</h2>
-      <ul id="cart-items"></ul>
-      <p id="cart-total">Разом: $0</p>
-      <button id="close-cart" class="btn">Закрити</button>
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <h3 class="section-title">Про нас</h3>
+          <p>
+            <strong>ElectroStore</strong> — це команда фанатів
+            технологій. Ми підбираємо перевірені ґаджети, тестуємо їх
+            у реальних умовах та даємо чесні рекомендації. Наша мета —
+            щоб кожен клієнт отримував саме те, що потрібно.
+          </p>
+          <ul class="list">
+            <li>Офіційна гарантія та підтримка.</li>
+            <li>Швидка доставка Новою Поштою по всій Україні.</li>
+            <li>Регулярні акції та знижки для постійних клієнтів.</li>
+          </ul>
+        </div>
+        <div class="about__image">
+          <img
+            src="./electrostore.png"
+            alt="Про нас"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery & Payment -->
+    <section id="delivery" class="delivery">
+      <div class="container delivery__grid">
+        <div>
+          <h3 class="section-title">Доставка та оплата</h3>
+          <p>
+            Ми співпрацюємо з найкращими службами доставки, щоб ви
+            отримали замовлення максимально швидко.
+          </p>
+          <div class="cards">
+            <div class="mini-card">
+              <h4>Доставка</h4>
+              <p>
+                Нова Пошта: 1–2 дні. Самовивіз зі складу у будні
+                10:00–18:00.
+              </p>
+            </div>
+            <div class="mini-card">
+              <h4>Оплата</h4>
+              <p>
+                Банківська картка, Apple Pay/Google Pay, накладений
+                платіж.
+              </p>
+            </div>
+            <div class="mini-card">
+              <h4>Повернення</h4>
+              <p>
+                14 днів на обмін/повернення згідно ЗУ «Про захист прав
+                споживачів».
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="rounded"
+          src="delivery.png"
+          alt="Доставка"
+        />
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h3 class="section-title">FAQ — Часті запитання</h3>
+        <details>
+          <summary>Чи є гарантія на товар?</summary>
+          <p>
+            Так, офіційна гарантія від 12 до 36 місяців залежно від
+            бренду.
+          </p>
+        </details>
+        <details>
+          <summary>Чи можна оплатити при отриманні?</summary>
+          <p>
+            Так, доступний накладений платіж з передоплатою за
+            доставку.
+          </p>
+        </details>
+        <details>
+          <summary>Чи допоможете з вибором?</summary>
+          <p>
+            Звісно! Напишіть нам — підберемо ґаджет під ваші задачі та
+            бюджет.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts">
+      <div class="container contacts__grid">
+        <div>
+          <h3 class="section-title">Контакти</h3>
+          <p>
+            Пишіть:
+            <a href="mailto:info@electrostore.ua"
+              >info@electrostore.ua</a
+            >
+          </p>
+          <p>
+            Телефон:
+            <a href="tel:+380441234567">+380 (44) 123-45-67</a>
+          </p>
+          <p>Графік: Пн-Пт 10:00–18:00</p>
+        </div>
+        <img
+          class="rounded"
+          src="contacts.png"
+          alt="Контакти"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 ElectroStore. Усі права захищені.</p>
+      </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <button class="close" id="close-cart">✕</button>
+        <h2>Ваш кошик</h2>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-bottom">
+          <p id="cart-total" class="total">Разом: $0</p>
+          <div class="cart-actions">
+            <button id="clear-cart" class="btn btn--ghost">
+              Очистити
+            </button>
+            <button id="checkout" class="btn">
+              Оформити замовлення
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- JavaScript -->
-  <script>
-    const cart = [];
-    const cartBtn = document.getElementById('cart-btn');
-    const cartCount = document.getElementById('cart-count');
-    const cartModal = document.getElementById('cart-modal');
-    const cartItems = document.getElementById('cart-items');
-    const cartTotal = document.getElementById('cart-total');
-    const closeCart = document.getElementById('close-cart');
+    <!-- JavaScript -->
+    <script>
+      // ---------- Дані товарів (можеш доповнювати) ----------
+      const PRODUCTS = [
+        {
+          name: "Ноутбук Pro X",
+          price: 1200,
+          img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop",
+          cat: "laptops",
+        },
+        {
+          name: "Смартфон Ultra",
+          price: 800,
+          img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop",
+          cat: "phones",
+        },
+        {
+          name: "Навушники MaxSound",
+          price: 150,
+          img: "https://images.unsplash.com/photo-1518449007433-6f7f1b2e6325?q=80&w=1200&auto=format&fit=crop",
+          cat: "audio",
+        },
+        {
+          name: "Планшет TabMaster",
+          price: 500,
+          img: "https://images.unsplash.com/photo-1510552776732-01acc9a4c1a3?q=80&w=1200&auto=format&fit=crop",
+          cat: "phones",
+        },
+        {
+          name: "Смарт-годинник WatchX",
+          price: 250,
+          img: "https://images.unsplash.com/photo-1516924962500-2b4b3b2b3a4f?q=80&w=1200&auto=format&fit=crop",
+          cat: "phones",
+        },
+        {
+          name: "Камера PhotoPro",
+          price: 900,
+          img: "https://images.unsplash.com/photo-1519183071298-a2962be96f83?q=80&w=1200&auto=format&fit=crop",
+          cat: "tv",
+        },
+        {
+          name: "Ігрова консоль GameBox",
+          price: 400,
+          img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1200&auto=format&fit=crop",
+          cat: "tv",
+        },
+        {
+          name: "Bluetooth-колонка SoundMax",
+          price: 120,
+          img: "https://images.unsplash.com/photo-1507870940625-29393f5b593c?q=80&w=1200&auto=format&fit=crop",
+          cat: "audio",
+        },
+        {
+          name: "Монітор UltraView",
+          price: 300,
+          img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Механічна клавіатура KeyMaster",
+          price: 90,
+          img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Геймерська миша ClickX",
+          price: 60,
+          img: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Wi-Fi Роутер NetPro",
+          price: 110,
+          img: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Вебкамера ClearView",
+          price: 80,
+          img: "https://images.unsplash.com/photo-1591059831075-c5ca8f047b4f?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Зовнішній HDD 1TB",
+          price: 70,
+          img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "SSD 500GB Fast",
+          price: 120,
+          img: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop",
+          cat: "peripherals",
+        },
+        {
+          name: "Гарнітура GamerPro",
+          price: 95,
+          img: "https://images.unsplash.com/photo-1515202913167-d9a698095ebf?q=80&w=1200&auto=format&fit=crop",
+          cat: "audio",
+        },
+        {
+          name: "Проектор MovieMax",
+          price: 450,
+          img: "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1200&auto=format&fit=crop",
+          cat: "tv",
+        },
+        {
+          name: "Смарт-телевізор SmartTV",
+          price: 900,
+          img: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+          cat: "tv",
+        },
+        {
+          name: "Бездротові навушники FreeSound",
+          price: 180,
+          img: "https://images.unsplash.com/photo-1518449007433-6f7f1b2e6325?q=80&w=1200&auto=format&fit=crop",
+          cat: "audio",
+        },
+        {
+          name: "Смарт-колонка VoiceX",
+          price: 130,
+          img: "https://images.unsplash.com/photo-1526178615666-45eaa5826cbb?q=80&w=1200&auto=format&fit=crop",
+          cat: "audio",
+        },
+      ];
 
-    document.querySelectorAll('.buy-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const name = button.getAttribute('data-name');
-        const price = parseInt(button.getAttribute('data-price'));
-        cart.push({ name, price });
-        cartCount.textContent = cart.length;
-        updateCart();
-        alert(`${name} додано у кошик!`);
+      // ---------- Рендер каталогу ----------
+      const grid = document.getElementById("catalog-grid");
+      function renderCatalog(items) {
+        grid.innerHTML = "";
+        items.forEach(({ name, price, img }) => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+          <img src="${img}" alt="${name}">
+          <div class="card__body">
+            <h4 class="card__title">${name}</h4>
+            <p class="price">$${price}</p>
+            <button class="btn buy-btn" data-name="${name}" data-price="${price}">Купити</button>
+          </div>
+        `;
+          grid.appendChild(card);
+        });
+      }
+      renderCatalog(PRODUCTS);
+
+      // ---------- Пошук та фільтри ----------
+      const searchInput = document.getElementById("search");
+      const chips = document.querySelectorAll(".chip");
+      let activeCat = "all";
+
+      function applyFilters() {
+        const q = searchInput.value.trim().toLowerCase();
+        const filtered = PRODUCTS.filter((p) => {
+          const byCat = activeCat === "all" || p.cat === activeCat;
+          const byText = p.name.toLowerCase().includes(q);
+          return byCat && byText;
+        });
+        renderCatalog(filtered);
+        attachBuyHandlers(); // перевішуємо хендлери після перерендеру
+      }
+
+      searchInput.addEventListener("input", applyFilters);
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          activeCat = chip.dataset.cat;
+          applyFilters();
+        });
       });
-    });
 
-    cartBtn.addEventListener('click', () => {
-      cartModal.style.display = 'flex';
-    });
+      // ---------- Кошик ----------
+      let cart = [];
+      const cartBtn = document.getElementById("cart-btn");
+      const cartCount = document.getElementById("cart-count");
+      const cartModal = document.getElementById("cart-modal");
+      const cartItems = document.getElementById("cart-items");
+      const cartTotal = document.getElementById("cart-total");
+      const closeCart = document.getElementById("close-cart");
+      const clearCartBtn = document.getElementById("clear-cart");
+      const checkoutBtn = document.getElementById("checkout");
 
-    closeCart.addEventListener('click', () => {
-      cartModal.style.display = 'none';
-    });
+      function saveCart() {
+        localStorage.setItem("electro_cart", JSON.stringify(cart));
+      }
+      function loadCart() {
+        try {
+          const raw = localStorage.getItem("electro_cart");
+          cart = raw ? JSON.parse(raw) : [];
+        } catch {
+          cart = [];
+        }
+        updateCart();
+      }
 
-    function updateCart() {
-      cartItems.innerHTML = '';
-      let total = 0;
-      cart.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.name} - $${item.price}`;
-        cartItems.append
+      function addToCart(name, price) {
+        const found = cart.find((i) => i.name === name);
+        if (found) found.qty += 1;
+        else cart.push({ name, price, qty: 1 });
+        updateCart(true);
+      }
+
+      function removeFromCart(name) {
+        cart = cart.filter((i) => i.name !== name);
+        updateCart();
+      }
+
+      function changeQty(name, delta) {
+        const item = cart.find((i) => i.name === name);
+        if (!item) return;
+        item.qty += delta;
+        if (item.qty <= 0) {
+          removeFromCart(name);
+        } else {
+          updateCart();
+        }
+      }
+
+      function updateCart(showToast = false) {
+        // список
+        cartItems.innerHTML = "";
+        let total = 0,
+          count = 0;
+
+        cart.forEach((item) => {
+          total += item.price * item.qty;
+          count += item.qty;
+
+          const li = document.createElement("li");
+          li.className = "cart-item";
+          li.innerHTML = `
+          <span class="ci-name">${item.name}</span>
+          <span class="ci-controls">
+            <button class="qty-btn" data-name="${
+              item.name
+            }" data-act="dec">−</button>
+            <span class="qty">${item.qty}</span>
+            <button class="qty-btn" data-name="${
+              item.name
+            }" data-act="inc">+</button>
+          </span>
+          <span class="ci-price">$${item.price * item.qty}</span>
+          <button class="rm-btn" data-name="${item.name}">✕</button>
+        `;
+          cartItems.appendChild(li);
+        });
+
+        cartTotal.textContent = `Разом: $${total}`;
+        cartCount.textContent = count;
+        saveCart();
+
+        if (showToast) toast("Товар додано у кошик");
+      }
+
+      function attachBuyHandlers() {
+        document.querySelectorAll(".buy-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const name = btn.getAttribute("data-name");
+            const price = parseFloat(btn.getAttribute("data-price"));
+            addToCart(name, price);
+          });
+        });
+      }
+      attachBuyHandlers();
+
+      // Модалка
+      cartBtn.addEventListener("click", () =>
+        cartModal.classList.add("open")
+      );
+      closeCart.addEventListener("click", () =>
+        cartModal.classList.remove("open")
+      );
+      cartModal.addEventListener("click", (e) => {
+        if (e.target === cartModal)
+          cartModal.classList.remove("open");
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") cartModal.classList.remove("open");
+      });
+
+      // Дії всередині кошика (делегування)
+      cartItems.addEventListener("click", (e) => {
+        const target = e.target;
+        if (target.classList.contains("rm-btn")) {
+          removeFromCart(target.dataset.name);
+        }
+        if (target.classList.contains("qty-btn")) {
+          const act = target.dataset.act;
+          const name = target.dataset.name;
+          changeQty(name, act === "inc" ? 1 : -1);
+        }
+      });
+
+      clearCartBtn.addEventListener("click", () => {
+        cart = [];
+        updateCart();
+      });
+
+      checkoutBtn.addEventListener("click", () => {
+        if (!cart.length) {
+          toast("Кошик порожній");
+          return;
+        }
+        toast(
+          "Дякуємо! Менеджер зв’яжеться з вами для підтвердження замовлення."
+        );
+        cart = [];
+        updateCart();
+        cartModal.classList.remove("open");
+      });
+
+      // Простенький тост
+      function toast(text) {
+        const t = document.createElement("div");
+        t.className = "toast";
+        t.textContent = text;
+        document.body.appendChild(t);
+        setTimeout(() => t.classList.add("show"), 10);
+        setTimeout(() => {
+          t.classList.remove("show");
+          setTimeout(() => t.remove(), 200);
+        }, 1800);
+      }
+
+      // Ініціалізація
+      loadCart();
+    </script>
+  </body>
+</html>
